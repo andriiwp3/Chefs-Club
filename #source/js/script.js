@@ -287,3 +287,5 @@ function tip() {
 		$(this).toggleClass('active');
 	});
 }
+
+$('.parallax-sale').parallax();

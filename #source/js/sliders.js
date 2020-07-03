@@ -1,22 +1,24 @@
 //SLIDERS
-if($('.mainslider').length>0){
-	$('.mainslider').slick({
-		//autoplay: true,
-		//infinite: false,
-		dots: true,
-		arrows: false,
+if($('.sale__slider').length>0){
+	$('.sale__slider').slick({
+		autoplay: true,
+		infinite: true,
+		dots: false,
+		arrows: true,
 		accessibility:false,
 		slidesToShow:1,
 		autoplaySpeed: 3000,
 		//asNavFor:'',
 		//appendDots:
 		//appendArrows:$('.mainslider-arrows .container'),
-		nextArrow:'<button type="button" class="slick-next"></button>',
-		prevArrow:'<button type="button" class="slick-prev"></button>',
-		responsive: [{
-			breakpoint: 768,
-			settings: {}
-		}]
+		nextArrow:'<button type="button" class="sale__slick-btn sale__slick-btn_next slick-next"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 13L7 7L1 1" stroke="#6D7077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+		prevArrow:'<button type="button" class="sale__slick-btn sale__slick-btn_prev slick-prev"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1L1 7L7 13" stroke="#6D7077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+		 responsive: [{
+			breakpoint: 479.98,
+			settings: {
+				dots: true
+			}
+		}],
 	});
 }
 /*
