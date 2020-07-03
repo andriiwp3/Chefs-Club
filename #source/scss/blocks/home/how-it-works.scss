@@ -1,0 +1,137 @@
+.how-it-works {
+
+	// .how-it-works__wrapper
+	&__wrapper {
+		padding: 80px 0 40px 0;
+	}
+	// .how-it-works__title
+	&__title {
+		margin: 0px 0px 45px 0px;
+	}
+	// .how-it-works__cards
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		text-align: center;
+	}
+	// .how-it-works__card
+	&__card {
+		flex: 0 1 25%;
+		&:not(:last-child) {
+			margin-right: 70px;
+		}
+	}
+}
+.container {
+}
+.title {
+	font-family: 'TT Norms';
+	font-weight: 700;
+	font-size: 48px;
+	color: #333;
+	text-align: center;
+}
+.card-how {
+	// .card-how__img
+	&__img {
+		width: auto;
+		height: 139px;
+		margin: 0px 0px 20px 0px;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+		&_menu {
+			animation: menu 1s .1s infinite alternate;
+		}
+		&_products {
+			animation: products .7s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s infinite alternate;
+		}
+		&_chef {
+			transform-origin: top;
+			animation: chef 1.2s infinite alternate;
+		}
+		&_subscription {
+			transform-origin: 100% 0;
+			animation: subscription 2s .05s infinite alternate;
+		}
+	}
+	// .card-how__title
+	&__title {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 24px;
+		color: #131315;
+		margin: 0px 0px 10px 0px;
+	}
+	// .card-how__desc
+	&__desc {
+		font-size: 16px;
+		line-height: 22px;
+		color: #6d7077;
+		max-width: 240px;
+		margin: 0 auto;
+	}
+}
+@media (max-width:$md2+px){
+	.how-it-works {
+		&__cards {
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		&__card {
+			flex: 0 1 46%;
+			margin-bottom: 40px;
+			&:not(:last-child) {
+				margin-right: 0;
+			}
+			&:nth-child(odd) {
+				margin-right: 40px;
+			}
+		}
+	}
+}
+@media (max-width:$md3+px){
+	.how-it-works {
+		&__card {
+			flex: 0 1 100%;
+			margin: 0px 0px 40px 0px;
+			&:nth-child(odd) {
+				margin-right: 0px;
+			}
+		}
+	}
+}
+@keyframes menu {
+	0% {
+		transform: rotateZ(2deg);
+	}
+	100% {
+		transform: rotateZ(-2deg);
+	}
+}
+@keyframes products {
+	0% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(-5px);
+	}
+}
+@keyframes chef {
+	0% {
+		transform: rotateZ(-5deg);
+	}
+	100% {
+		transform: rotateZ(5deg);
+	}
+}
+@keyframes subscription {
+	0% {
+		transform: rotateZ(-3.5deg);
+	}
+	100% {
+		transform: rotateZ(3.5deg);
+	}
+}
