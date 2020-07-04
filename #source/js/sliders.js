@@ -21,6 +21,36 @@ if($('.sale__slider').length>0){
 		}],
 	});
 }
+
+if($('.menu__item').length>0){
+	$('.menu__item').slick({
+		autoplay: false,
+		infinite: true,
+		dots: false,
+		arrows: true,
+		accessibility:false,
+		slidesToShow: 3,
+		//asNavFor:'',
+		//appendDots:
+		//appendArrows:$('.mainslider-arrows .container'),
+		nextArrow:'<button type="button" class="menu__slick-btn menu__slick-btn_next slick-next"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 13L7 7L1 1" stroke="#6D7077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+		prevArrow:'<button type="button" class="menu__slick-btn menu__slick-btn_prev slick-prev"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1L1 7L7 13" stroke="#6D7077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+		 responsive: [
+			{
+				breakpoint: 1170,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		],
+	});
+}
 /*
 
 

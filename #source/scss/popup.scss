@@ -22,7 +22,7 @@
 }
 .popup-content {
 	@include scale(0);
-	@include anim(0.3s, 0s);
+	@include anim(0.3, 0);
 	position: relative;
 	max-width: 1230px;
 	margin: 0px auto;
