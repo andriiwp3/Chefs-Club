@@ -606,6 +606,7 @@ function formValidate(input){
 	}
 		return er;
 }
+formValidate($('.subscribe__input'));
 function formLoad(){
 	$('.popup').hide();
 	$('.popup-message-body').hide();

@@ -1,4 +1,9 @@
 .how-it-works {
+	transition: all .5s ease-in;
+	transform: translateX(-100%);
+	&.active {
+		transform: translateX(0);
+	}
 
 	// .how-it-works__wrapper
 	&__wrapper {

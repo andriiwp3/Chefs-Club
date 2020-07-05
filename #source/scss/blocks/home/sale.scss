@@ -1,4 +1,9 @@
 .sale {
+	transition: all .5s ease-in;
+	opacity: 0;
+	&.active {
+		opacity: 1;
+	}
 	// .sale__wrapper
 	&__wrapper {
 		padding: 110px 0px 0px 0px;

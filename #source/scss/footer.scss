@@ -1,4 +1,9 @@
 .footer {
+	transition: opacity .5s ease-in;
+	opacity: 0;
+	&.view {
+		opacity: 1;
+	}
 	// .footer__row
 	&__row {
 		display: flex;
@@ -96,6 +101,8 @@
 		padding: 12px 0 12px 20px;
 		border: 1px solid #CDCFD5;
 		border-radius: 64px;
+		font-size: 14px;
+		color: #878786;
 		transition: all .3s ease;
 		&::placeholder {
 			font-size: 14px;
@@ -118,8 +125,10 @@
 		justify-content: center;
 		align-items: center;
 		transition: all .3s ease;
-		&:hover {
-			background: #7f834a;
+		@media (min-width:$md3+px){
+			&:hover {
+				background: #7f834a;
+			}
 		}
 	}
 }
@@ -132,12 +141,14 @@
 		justify-content: flex-start;
 		align-items: stretch;
 		li {
-			&:hover {
-				a {
-					background-color: #65BF4F;
-					svg {
-						path {
-							fill: #fff !important;
+			@media (min-width:$md3+px){
+				&:hover {
+					a {
+						background-color: #65BF4F;
+						svg {
+							path {
+								fill: #fff !important;
+							}
 						}
 					}
 				}

@@ -100,7 +100,7 @@ $('.popup-close,.popup__close').click(function (event) {
 	return false;
 });
 $('.popup').click(function (e) {
-	if (!$(e.target).is(".popup>.popup-table>.cell *") || $(e.target).is(".popup-close") || $(e.target).is(".popup__close")) {
+	if (!$(e.target).is(".popup>.popup__table>.cell *") || $(e.target).is(".popup-close") || $(e.target).is(".popup__close")) {
 		popupClose();
 		return false;
 	}
@@ -289,3 +289,4 @@ function tip() {
 }
 
 $('.parallax-sale').parallax();
+$('.parallax-oops').parallax();

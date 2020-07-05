@@ -11,7 +11,7 @@ function sectors(scr){
 		var w=$(window).outerWidth();
 		var h=$(window).outerHeight();
 		var headerheight=80;
-	if(w<768){headerheight=50;}
+	if(w<768){headerheight=60;}
 	if(scr>0){
 		$('header').addClass('scroll');
 	}else{

@@ -1,5 +1,6 @@
 //@prepros-append jq-start.js
 //@prepros-append forms.js
+//@prepros-append scroll.js
 //@prepros-append jquery.parallax.js
 //@prepros-append slick.min.js
 //@prepros-append sliders.js

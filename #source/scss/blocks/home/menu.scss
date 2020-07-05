@@ -1,6 +1,11 @@
 .menu {
 	background: #f9fcf9;
 	user-select: none;
+	transition: all .5s ease-in;
+	transform: translateX(100%);
+	&.active {
+		transform: translateX(0);
+	}
 	// .menu__wrapper
 	&__wrapper {
 		padding: 80px 0px 80px 0px;
