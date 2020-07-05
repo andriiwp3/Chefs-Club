@@ -65,15 +65,17 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		li.active {
+			a {
+				color: #71B639;
+			}
+		}
 	}
 	// .header-menu__link
 	&__link {
 		font-size: 16px;
 		color: #464243;
 		transition: all .3s ease;
-		&.active {
-			color: #71B639;
-		}
 	}
 }
 .menu-list {
@@ -273,8 +275,10 @@
 }
 @media (min-width:$md3+px){
 	.header-menu {
-		&__link:hover {
-			color: #71B639;
+		&__list li:hover {
+			a {
+				color: #71B639;
+			}
 		}
 	}
 	.sign-in:hover {
